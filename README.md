@@ -8,7 +8,7 @@
 
 The goal of this project is to put what you've learnt until now together in a single project.
 
-In this project you should use the publications database. 
+In this project you should use the **`publications database`**. 
 
 In previous labs, we asked you to extract some information from it using `sql querys`. This time you should build a visualization that answers this questions.
 
