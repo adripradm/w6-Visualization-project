@@ -48,6 +48,7 @@ The technical requirements for this project are as follows:
 * **Have fun! Never give up! Be proud of your work!**
 
 ## Useful Resources
+:rocket: [Visualization tips](https://boostlabs.com/blog/10-types-of-data-visualization-tools/)
 
 :rocket:[Power BI official learning](https://help.tableau.com/current/guides/get-started-tutorial/es-es/get-started-tutorial-home.htm)
 
