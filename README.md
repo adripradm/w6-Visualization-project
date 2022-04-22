@@ -1,3 +1,4 @@
+![Ironhack logo](https://i.imgur.com/1QgrNNw.png) 
 # Project: Visualization
 
 ![portada](https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
