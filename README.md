@@ -5,13 +5,15 @@
 
 ## Overview
 
-The goal of this project is to put what you've learn until now together in a single project.
+The goal of this project is to put what you've learnt until now together in a single project.
 
-In this project you shoul use the pblications database. 
+In this project you should use the publications database. 
 
-In previous labs, we asked you to extract some information from it using sql querys. This time you shoul build a visualization that answers this questions.
+In previous labs, we asked you to extract some information from it using `sql querys`. This time you should build a visualization that answers this questions.
 
-As a future data analyst, you should be able to also aske the proper questions so add at least one new question and answer it in the visualization.
+As a future data analyst, you should be able to also ask the proper questions so add at least one new question and answer it in the visualization.
+
+Remember that should tell a story with your dashboard and be able to present ir to us!!
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
