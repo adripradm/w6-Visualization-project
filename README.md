@@ -18,7 +18,7 @@ Remember that should tell a story with your dashboard and be able to present ir 
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
-**Heeyyy!!!** *If you prefer to use your own data and ask your own questions feel free to do so!!
+**Heeyyy!!!** *If you prefer to use your own data and ask your own questions feel free to do so!!*
 
 
 ---
