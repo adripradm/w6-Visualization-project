@@ -1,6 +1,6 @@
 # Project: Visualization
 
-![portada](https://www.informatica.com/content/dam/informatica-com/en/images/misc/etl-process-explained-diagram.png)
+![portada](https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
 
 
 ## Overview
