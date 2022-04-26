@@ -2,4 +2,4 @@
 # Project: Visualization
 
 Representación de ofertas de coches de segunda mano comparando las ofertas de 2015 frente al 2022.
-![plot](electricos.png)
+![Alt text](electricos.png?raw=true "Title")
