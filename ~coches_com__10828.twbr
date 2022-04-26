@@ -1,0 +1,1555 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='coches.com_bueno' inline='true' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='coches.com_bueno' name='textscan.1hmyi7h02rs3g912h338t0ixvul7'>
+            <connection class='textscan' directory='C:/Users/alima/laboratorios/proyectos/W5-ETL_project' filename='coches.com_bueno.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1hmyi7h02rs3g912h338t0ixvul7' name='coches.com_bueno.csv' table='[coches.com_bueno#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='version' ordinal='1' />
+            <column datatype='integer' name='precio' ordinal='2' />
+            <column datatype='string' name='combustible' ordinal='3' />
+            <column datatype='string' name='CV' ordinal='4' />
+            <column datatype='integer' name='km' ordinal='5' />
+            <column datatype='string' name='lugar' ordinal='6' />
+            <column datatype='integer' name='año' ordinal='7' />
+            <column datatype='string' name='link' ordinal='8' />
+            <column datatype='string' name='modelo' ordinal='9' />
+            <column datatype='string' name='marca' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1hmyi7h02rs3g912h338t0ixvul7' name='coches.com_bueno.csv' table='[coches.com_bueno#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='version' ordinal='1' />
+            <column datatype='integer' name='precio' ordinal='2' />
+            <column datatype='string' name='combustible' ordinal='3' />
+            <column datatype='string' name='CV' ordinal='4' />
+            <column datatype='integer' name='km' ordinal='5' />
+            <column datatype='string' name='lugar' ordinal='6' />
+            <column datatype='integer' name='año' ordinal='7' />
+            <column datatype='string' name='link' ordinal='8' />
+            <column datatype='string' name='modelo' ordinal='9' />
+            <column datatype='string' name='marca' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>version</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[version]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>version</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[precio]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>precio</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combustible</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[combustible]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>combustible</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>CV</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>km</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[km]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>km</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lugar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lugar]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>lugar</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>año</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[año]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>año</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modelo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[modelo]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>modelo</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marca</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marca]</local-name>
+            <parent-name>[coches.com_bueno.csv]</parent-name>
+            <remote-alias>marca</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='coches.com_bueno.csv' datatype='table' name='[__tableau_internal_object_id__].[coches.com_bueno.csv_34531AE6EE3F41EDA74C4C2D4DF3025D]' role='measure' type='quantitative' />
+      <column caption='Año' datatype='integer' name='[año]' role='dimension' type='quantitative' />
+      <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+      <column caption='Km' datatype='integer' name='[km]' role='measure' type='quantitative' />
+      <column caption='Link' datatype='string' name='[link]' role='dimension' type='nominal' />
+      <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+      <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+      <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+      <column caption='Version' datatype='string' name='[version]' role='dimension' type='nominal' />
+      <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+      <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:marca:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cadillac&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jaguar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Skoda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Galloper&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nissan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Aston&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Innocenti&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Renault&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cupra&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Land&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Suzuki&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chevrolet&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jeep&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Smart&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Audi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Invicta&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rover&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fiat&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mini&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abarth&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Honda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Opel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ds&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mercedes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Volvo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bentley&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Isuzu&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Saab&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dacia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lexus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tesla&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Daewoo&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Maserati&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Toyota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ferrari&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mg&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zhidou&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ford&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mitsubishi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chrysler&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ssangyong&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bmw&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iveco&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Seat&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alfa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hyundai&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Peugeot&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dfsk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mazda&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Volkswagen&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Citroen&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lancia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Subaru&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alpine&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Infiniti&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Porsche&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:lugar:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Badajoz&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pontevedra&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;                              Coruña, A             &quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jaen&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alicante&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Madrid&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ciudad Real&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tenerife&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Barcelona&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Salamanca&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Almeria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Malaga&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Huesca&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;                  Coruña, A             &quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Leon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Guipuzcoa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zaragoza&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Asturias&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Murcia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Girona&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Toledo&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Granada&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Valencia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Huelva&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Illes Balears&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cadiz&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sevilla&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Avila&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Navarra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;                              Palmas, Las             &quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lleida&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Guadalajara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Vizcaya&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Castellon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tarragona&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;                  Palmas, Las             &quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lugo&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='coches.com_bueno.csv' id='coches.com_bueno.csv_34531AE6EE3F41EDA74C4C2D4DF3025D'>
+            <properties context=''>
+              <relation connection='textscan.1hmyi7h02rs3g912h338t0ixvul7' name='coches.com_bueno.csv' table='[coches.com_bueno#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='version' ordinal='1' />
+                  <column datatype='integer' name='precio' ordinal='2' />
+                  <column datatype='string' name='combustible' ordinal='3' />
+                  <column datatype='string' name='CV' ordinal='4' />
+                  <column datatype='integer' name='km' ordinal='5' />
+                  <column datatype='string' name='lugar' ordinal='6' />
+                  <column datatype='integer' name='año' ordinal='7' />
+                  <column datatype='string' name='link' ordinal='8' />
+                  <column datatype='string' name='modelo' ordinal='9' />
+                  <column datatype='string' name='marca' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+      <datasources>
+        <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+        <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+        <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]'>
+        <groupfilter function='level-members' level='[none:precio:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Diesel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[modelo]' derivation='Count' name='[cnt:modelo:qk]' pivot='key' type='quantitative' />
+            <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[combustible]' derivation='None' name='[none:combustible:nk]' pivot='key' type='nominal' />
+            <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]'>
+            <groupfilter function='member' level='[none:combustible:nk]' member='&quot;Diesel&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Longitude (generated)]' field-type='quantitative' max='417588.63501154841' min='-1169122.3477807129' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Latitude (generated)]' field-type='quantitative' max='5316298.3470990704' min='4120614.4223222528' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:lugar:nk]' />
+              <size column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Latitude (generated)]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1D0D9BE2-FF57-44AE-9E1F-B98CDFE0DE22}' />
+    </worksheet>
+    <worksheet name='Golf'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[modelo]' derivation='Count' name='[cnt:modelo:qk]' pivot='key' type='quantitative' />
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' included-values='all' />
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]'>
+            <groupfilter function='member' level='[none:marca:nk]' member='&quot;Volkswagen&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:modelo:nk]' member='&quot;Golf&quot;' />
+              <groupfilter function='member' level='[none:modelo:nk]' member='&quot;Sports…Golf&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Longitude (generated)]' field-type='quantitative' max='1865027.9716275791' min='-2464048.610393378' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Latitude (generated)]' field-type='quantitative' max='5812067.3393594222' min='3867056.2319591935' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]' />
+              <lod column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:lugar:nk]' />
+              <lod column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' />
+              <text column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]' />
+              <geometry column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Latitude (generated)]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B7258074-590C-486B-B8F3-04F6FE7A521C}' />
+    </worksheet>
+    <worksheet name='Hoja 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+            <column-instance column='[precio]' derivation='Stdev' name='[std:precio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]'>
+            <groupfilter function='member' level='[none:marca:nk]' member='&quot;Volkswagen&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' z-order='2' />
+            <reference-line axis-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]</cols>
+      </table>
+      <simple-id uuid='{7EE00952-3C46-4E60-8115-0FCAFBE89D4B}' />
+    </worksheet>
+    <worksheet name='Hoja 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:qk]' pivot='key' type='quantitative' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:modelo:nk]' member='&quot;Golf&quot;' />
+              <groupfilter function='member' level='[none:modelo:nk]' member='&quot;Sports…Golf&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:qk]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:lugar:nk]</cols>
+      </table>
+      <simple-id uuid='{A65B2310-148E-4B09-9D49-ACAE55FCA5A7}' />
+    </worksheet>
+    <worksheet name='Hoja 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[modelo]' derivation='Count' name='[cnt:modelo:qk]' pivot='key' type='quantitative' />
+            <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[combustible]' derivation='None' name='[none:combustible:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]'>
+            <groupfilter function='member' level='[none:combustible:nk]' member='&quot;Eléctrico&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' />
+              <text column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]</rows>
+        <cols>([federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk] / [federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk])</cols>
+      </table>
+      <simple-id uuid='{56970D3A-D2F1-455D-94C2-A0AB7C2A60C2}' />
+    </worksheet>
+    <worksheet name='Hoja 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+            <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[combustible]' derivation='None' name='[none:combustible:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]'>
+            <groupfilter expression='AVG([precio]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='member' level='[none:combustible:nk]' member='&quot;Eléctrico&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' />
+              <text column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]</rows>
+        <cols>([federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk] / [federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk])</cols>
+      </table>
+      <simple-id uuid='{6B53D9D1-122A-455F-B904-3C3F7F014E4D}' />
+    </worksheet>
+    <worksheet name='combustible 2022'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>combustible por marca 2022</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[combustible]' derivation='Count' name='[cnt:combustible:qk]' pivot='key' type='quantitative' />
+            <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column-instance column='[combustible]' derivation='None' name='[none:combustible:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:combustible:qk]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]</cols>
+      </table>
+      <simple-id uuid='{B18EF5F0-6A48-4305-B7E0-04F1DB923333}' />
+    </worksheet>
+    <worksheet name='precio `por marca y combustible'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+            <column caption='Combustible' datatype='string' name='[combustible]' role='dimension' type='nominal' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column-instance column='[combustible]' derivation='None' name='[none:combustible:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+            <column-instance column='[precio]' derivation='Stdev' name='[std:precio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]' member-value='&quot;Diesel&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' z-order='2' />
+            <reference-line axis-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[std:precio:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk] * [federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk])</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]</cols>
+      </table>
+      <simple-id uuid='{A55673AA-937D-457F-BD92-C2037131DF3C}' />
+    </worksheet>
+    <worksheet name='precio por modelo'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+            <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+            <column caption='Marca' datatype='string' name='[marca]' role='dimension' type='nominal' />
+            <column caption='Modelo' datatype='string' name='[modelo]' role='dimension' type='nominal' />
+            <column-instance column='[marca]' derivation='None' name='[none:marca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modelo]' derivation='None' name='[none:modelo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[precio]' derivation='None' name='[none:precio:nk]' pivot='key' type='ordinal' />
+            <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]'>
+            <groupfilter function='member' level='[none:marca:nk]' member='&quot;Volkswagen&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]</column>
+            <column>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:precio:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]</rows>
+        <cols>[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:modelo:nk]</cols>
+      </table>
+      <simple-id uuid='{E77A3176-AC3F-46BC-B7D6-B804FB70FD4E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='43625' id='3' name='precio `por marca y combustible' w='94600' x='-600' y='0' />
+        <zone h='52250' id='4' name='combustible 2022' w='98400' x='1100' y='47000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='43625' id='3' is-fixed='true' name='precio `por marca y combustible' w='94600' x='-600' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52250' id='4' is-fixed='true' name='combustible 2022' w='98400' x='1100' y='47000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F2C09AB9-FC1C-45A1-9CAB-DD1CCF219144}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='coches.com_bueno' name='federated.15qcn1p1m6bp6n153d0pg04igp4b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15qcn1p1m6bp6n153d0pg04igp4b'>
+        <column-instance column='[precio]' derivation='Avg' name='[avg:precio:qk]' pivot='key' type='quantitative' />
+        <column caption='Precio' datatype='integer' name='[precio]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='41625' id='3' name='Hoja 5' w='52100' x='-5100' y='-1125' />
+        <zone h='61750' id='4' name='Golf' w='98700' x='-400' y='40750' />
+        <zone h='45250' id='5' name='Hoja 7' w='51800' x='47300' y='1500' />
+        <zone h='8125' id='6' name='Golf' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' type-v2='filter' values='database' w='16000' x='25200' y='38000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='41625' id='3' is-fixed='true' name='Hoja 5' w='52100' x='-5100' y='-1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45250' id='5' is-fixed='true' name='Hoja 7' w='51800' x='47300' y='1500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='6' name='Golf' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[avg:precio:qk]' type-v2='filter' values='database' w='16000' x='25200' y='38000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='61750' id='4' is-fixed='true' name='Golf' w='98700' x='-400' y='40750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3FFAE73-9FA6-4E18-A1C5-BFD22F1C6AD9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='61000' id='3' name='Hoja 8' w='101100' x='-900' y='-1500' />
+        <zone h='46125' id='4' name='Hoja 9' w='96700' x='2400' y='58250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='61000' id='3' is-fixed='true' name='Hoja 8' w='101100' x='-900' y='-1500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46125' id='4' is-fixed='true' name='Hoja 9' w='96700' x='2400' y='58250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{10F0C2C6-360E-427F-8771-8C377D54F14D}' />
+    </dashboard>
+    <dashboard name='Historia 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='coches españa 2015' captured-sheet='Dashboard 1' id='1' />
+                  <story-point caption='Golf' captured-sheet='Dashboard 2' id='2' />
+                  <story-point captured-sheet='Dashboard 3' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{3DB4319C-000C-451D-BF51-1018A0BEEA58}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Diesel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A5A8FD7-9666-4E7E-9867-23D8E9CCD49A}' />
+    </window>
+    <window class='worksheet' name='combustible 2022'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:combustible:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7FBF28B7-BBE4-437F-92D5-024162459A63}' />
+    </window>
+    <window class='worksheet' name='precio por modelo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6739160F-5A9F-4A9A-B23E-AAB24CFB2D66}' />
+    </window>
+    <window class='worksheet' name='precio `por marca y combustible'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{89F29E41-C9E0-4DE8-B445-085C6D65F529}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='combustible 2022'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='precio `por marca y combustible'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{59280034-52EA-4E6B-B512-ECA8276AF128}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Golf'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Hoja 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3FD17C32-4B17-4C25-B2D8-6351F31E931C}' />
+    </window>
+    <window class='worksheet' name='Hoja 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{914A62B8-619C-4511-8039-B6CCFFF366ED}' />
+    </window>
+    <window class='worksheet' name='Golf'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[cnt:modelo:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A676031-014D-4755-9E21-981F1801893F}' />
+    </window>
+    <window class='worksheet' name='Hoja 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{63B9C656-845B-456E-A3CB-20A7760B2BB3}' />
+    </window>
+    <window class='dashboard' name='Historia 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{8EA1D7C9-90F3-40ED-A37E-CEEEB9A58AC6}' />
+    </window>
+    <window class='worksheet' name='Hoja 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E60950D6-016E-4322-B6AA-17F623DCB03B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.15qcn1p1m6bp6n153d0pg04igp4b].[none:marca:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DCD970B-2C79-4266-8B78-0684A50ED6C7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Hoja 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{64381E39-B076-4040-A490-53B27275DCFF}' />
+    </window>
+  </windows>
+</workbook>
